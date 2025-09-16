@@ -1,13 +1,279 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профессиональная сварка - Компания</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <!-- Слайд 1 - Герой секция -->
+  <section class="welding-banner">
+    <div class="spark-effects"></div>
+
+    <div class="floating-sparks">
+      <div class="floating-spark spark-1"></div>
+      <div class="floating-spark spark-2"></div>
+      <div class="floating-spark spark-3"></div>
+      <div class="floating-spark spark-4"></div>
+      <div class="floating-spark spark-5"></div>
+    </div>
+
+    <div class="content-container">
+      <div class="left-content">
+        <div class="materials-block">
+          <div class="materials-title">Работаем с любыми металлами:</div>
+          <div class="materials-list">нержавейка, алюминий, медь, чугун, сталь</div>
+        </div>
+
+        <h1 class="main-title">Профессиональная сварка</h1>
+        <div class="subtitle">в среде защитных газов.</div>
+
+        <p class="description">
+          Изготовление и ремонт сложных и простых металлоконструкций из нержавейки, алюминия и черного металла. Работаем
+          под ключ: от идеи до монтажа.
+        </p>
+      </div>
+
+      <div class="right-content">
+        <div class="quality-badge">
+          Наша сила — в качестве и ответственности!
+        </div>
+
+        <div class="strength-text">
+          Наша сила — в качестве и<br>ответственности!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Слайд 2 - О нас -->
+  <section class="about-section">
+    <span class="slide-indicator">слайд 2</span>
+    <div class="container">
+      <div class="about-content">
+        <div class="about-left">
+          <h2 class="glow">О нас</h2>
+          <p class="about-text">
+            Мы — небольшая, но сплоченная команда специалистов с многолетним опытом. Работаем сами без посредников, что
+            позволяет нам предлагать лучшие цены и лично контролировать каждый этап.
+          </p>
+          <p class="about-values">
+            Мы ценим доверие каждого клиента, подходим к задачам так, чтобы вы вернулись к нам снова со следующими
+            задачами.
+          </p>
+        </div>
+
+        <div class="about-right">
+          <div class="tools-section">
+            <h3 class="tools-title">Наш рабочий инструмент</h3>
+            <ul class="tools-list">
+              <li>Аппараты для сварки TIG, MIG MMA (Сварка: алюминия, нержавейки, меди, бронзы и прочего)</li>
+              <li>Листогиб</li>
+              <li>Трубогибы (угловой и прокатный)</li>
+              <li>Токарный станок</li>
+              <li>Вальцы</li>
+              <li>Сверлильное оборудование</li>
+              <li>Полировочные принадлежности</li>
+            </ul>
+
+            <div class="image-placeholder">
+              <div style="color: white; font-size: 24px; z-index: 1;">🔥 Сварочные работы</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция "Наши услуги" -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="services-title">Наши услуги</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Сварка и изготовление металлоконструкций</h3>
+          <p>Заборы, ворота, каркасы, стеллажи, фермы, индивидуальные проекты.</p>
+          <span class="service-number">01</span>
+        </div>
+
+        <div class="service-card">
+          <h3>Работа с нержавеющей сталью</h3>
+          <p>Изготовление и ремонт изделий для пищевого производства, общепита, декора.</p>
+          <span class="service-number">02</span>
+        </div>
+
+        <div class="service-card">
+          <h3>Работа с алюминием</h3>
+          <p>Легкие конструкции, поручни, фасадные элементы, ремонт.</p>
+          <span class="service-number">03</span>
+        </div>
+
+        <div class="service-card">
+          <h3>Срочный ремонт</h3>
+          <p>Восстановление сломанных деталей, оперативное решение аварийных ситуаций.</p>
+          <span class="service-number">04</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция "Как мы работаем?" -->
+  <section class="process-section">
+    <div class="container">
+      <div class="process-header">
+        <div class="process-line"></div>
+        <h2 class="process-title">Как мы работаем?</h2>
+      </div>
+
+      <div class="process-content">
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="step-number">01.</span>
+            <div class="step-content">
+              <h4>Вы обращаетесь с задачей</h4>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">02.</span>
+            <div class="step-content">
+              <h4>Рассчитываем стоимость и согласовываем с вами сроки.</h4>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">03.</span>
+            <div class="step-content">
+              <h4>Вы вносите предоплату для закупки материалов.</h4>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">04.</span>
+            <div class="step-content">
+              <h4>Мы изготавливаем изделие в рамках обговорённых сроков.</h4>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">05.</span>
+            <div class="step-content">
+              <h4>Вы принимаете работу и вносите окончательную оплату.</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-images">
+          <div class="process-image">
+            <div style="z-index: 1;">⚡ Сварочные искры</div>
+          </div>
+          <div class="process-image">
+            <div style="z-index: 1;">🔧 Точная работа</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция "Почему мы?" -->
+  <section class="advantages-section">
+    <div class="container">
+      <div class="advantages-content">
+        <div class="advantages-left">
+          <h2 class="advantages-title">Почему мы?</h2>
+          <p class="advantages-subtitle">Наше преимущество</p>
+
+          <div class="advantages-list">
+            <div class="advantage-item">
+              <div class="advantage-icon">
+                <div class="icon-circle">$</div>
+              </div>
+              <div class="advantage-content">
+                <h3>Цена без накруток</h3>
+                <p>Работаем без менеджеров - Быстрый отклик на заявки.</p>
+              </div>
+            </div>
+
+            <div class="advantage-item">
+              <div class="advantage-icon">
+                <div class="icon-circle">👥</div>
+              </div>
+              <div class="advantage-content">
+                <h3>Прямая связь с исполнителем</h3>
+                <p>Вы общаетесь напрямую к тем, кто будет "варить" ваш заказ.</p>
+              </div>
+            </div>
+
+            <div class="advantage-item">
+              <div class="advantage-icon">
+                <div class="icon-circle">✓</div>
+              </div>
+              <div class="advantage-content">
+                <h3>Контроль качества на всех этапах</h3>
+                <p>Личная ответственность за результат, фотоотчёт на всех этапах.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages-right">
+          <div class="advantages-images">
+            <div class="advantage-photo advantage-photo-1">
+              <div class="photo-content">🔥 Работа в действии</div>
+            </div>
+            <div class="advantage-photo advantage-photo-2">
+              <div class="photo-content">⚡ Точная сварка</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция контактов -->
+  <section class="contact-section">
+    <div class="contact-bg"></div>
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>Телефон:</strong> [+7 XXX XXX-XX-XX]
+          </div>
+          <div class="contact-item">
+            <strong>WhatsApp/Telegram:</strong> [+7 XXX XXX-XX-XX]
+          </div>
+          <div class="contact-item">
+            <strong>Email:</strong> [your.email@mail.ru]
+          </div>
+          <div class="contact-item">
+            <strong>Адрес мастерской:</strong> г. [Ваш город],<br>
+            [Название района/улицы] (по желанию)
+          </div>
+          <div class="contact-item">
+            <strong>Режим работы:</strong> Пн-Пт: с 9:00 до 18:00, Сб-Вс: по договорённости
+          </div>
+        </div>
+
+        <div class="contact-message">
+          <h3>Мы — не гигантский завод,</h3>
+          <p>но именно поэтому мы предлагаем персональный подход, низкие цены, соблюдение сроков и тотальный контроль
+            качества за ваш заказ!</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-sparks">
+      <div class="spark"></div>
+      <div class="spark"></div>
+      <div class="spark"></div>
+      <div class="spark"></div>
+      <div class="spark"></div>
+      <div class="spark"></div>
+    </div>
+  </section>
+</body>
+
 </html>
