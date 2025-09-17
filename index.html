@@ -9,7 +9,59 @@
 </head>
 
 <body>
-  <!-- Блок 1 удалён: welding-banner -->
+  <!-- Блок 1 -->
+  <section class="hero-section">
+    <div class="hero-motto">Наша сила — в качестве и ответственности!</div>
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-subtitle">Работаем с любыми металлами:<br>
+          нержавейка, алюминий, медь, чугун, сталь</p>
+
+        <h1>Профессиональная сварка<br>
+          <span class="highlight">в среде защитных газов.</span>
+        </h1>
+
+        <p class="hero-description">
+          Изготовление и ремонт сложных и простых металлоконструкций из нержавейки, алюминия и
+          черного металла. Работаем под ключ: от идеи до монтажа.
+        </p>
+
+        <!-- Форма обратной связи -->
+        <div class="contact-form">
+          <h3 class="form-title">Получить консультацию</h3>
+          <form class="feedback-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <input type="text" placeholder="Ваше имя" required size="15" maxlength="50" class="form-input">
+              <input type="tel" placeholder="Телефон" required size="15" maxlength="50" class="form-input">
+            </div>
+            <div class="form-row">
+              <select class="form-input form-select" required>
+                <option value="">Тип работ</option>
+                <option value="welding">Сварочные работы</option>
+                <option value="repair">Ремонт конструкций</option>
+                <option value="manufacturing">Изготовление</option>
+                <option value="consultation">Консультация</option>
+              </select>
+            </div>
+            <textarea placeholder="Опишите задачу" class="form-input form-textarea" rows="3"></textarea>
+            <button type="submit" class="form-button">
+              <span class="button-text">Отправить заявку</span>
+              <span class="button-spark">⚡</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 искр с разными размерами и эффектами -->
+    <div class="welding-spark"></div>
+    <div class="welding-spark small"></div>
+    <div class="welding-spark large"></div>
+    <div class="welding-spark"></div>
+    <div class="welding-spark small"></div>
+
+  </section>
 
   <!-- Блок 2 -->
   <section class="about-section">
