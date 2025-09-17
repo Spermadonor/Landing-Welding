@@ -768,7 +768,6 @@ img {
 
 @media (max-width: 768px) {
   .welding-banner {
-    height: auto;
     min-height: 600px;
   }
 
