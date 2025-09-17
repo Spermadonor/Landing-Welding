@@ -11,16 +11,22 @@ body {
   background: #f5f5f5;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Слайд 1 - Новая герой секция */
+/* Блок 1 */
 .welding-banner {
   position: relative;
-  height: 600px;
+  height: 100vh;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(20, 10, 0, 0.8)),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><radialGradient id="spark1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23ffaa00" stop-opacity="0.8"/><stop offset="100%" stop-color="%23ff6600" stop-opacity="0.2"/></radialGradient><radialGradient id="spark2" cx="50%" cy="50%" r="30%"><stop offset="0%" stop-color="%23ffcc00" stop-opacity="0.9"/><stop offset="100%" stop-color="%23ff8800" stop-opacity="0.1"/></radialGradient></defs><rect width="1200" height="600" fill="%23000"/><g opacity="0.6"><circle cx="300" cy="200" r="40" fill="url(%23spark1)"/><circle cx="280" cy="180" r="15" fill="url(%23spark2)"/><circle cx="320" cy="220" r="8" fill="%23ffcc00"/><circle cx="350" cy="190" r="5" fill="%23ffaa00"/><circle cx="270" cy="230" r="3" fill="%23ff9900"/></g><g opacity="0.4"><circle cx="800" cy="350" r="30" fill="url(%23spark1)"/><circle cx="790" cy="340" r="12" fill="url(%23spark2)"/><circle cx="810" cy="360" r="6" fill="%23ffcc00"/><circle cx="825" cy="335" r="4" fill="%23ffaa00"/></g></svg>');
   background-size: cover;
@@ -240,7 +246,7 @@ body {
   }
 }
 
-/* Слайд 2 - О нас */
+/* Блок 2 - О нас */
 .about-section {
   background: #f0f0f0;
   padding: 80px 0;
@@ -280,10 +286,7 @@ body {
 }
 
 .tools-section {
-  background: white;
-  border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .tools-title {
@@ -299,7 +302,7 @@ body {
 }
 
 .tools-list li {
-  padding: 12px 0;
+  padding: 3px 0;
   padding-left: 30px;
   position: relative;
   font-size: 16px;
@@ -308,38 +311,16 @@ body {
 }
 
 .tools-list li:before {
-  content: "•";
-  color: #ff6b35;
-  font-size: 24px;
+  content: '⚡';
   position: absolute;
   left: 0;
+  color: #ff6b35;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .image-placeholder {
-  background: linear-gradient(135deg, #ff6b35 0%, #f77737 100%);
-  border-radius: 20px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.image-placeholder::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: repeating-linear-gradient(45deg,
-      transparent,
-      transparent 10px,
-      rgba(255, 255, 255, 0.1) 10px,
-      rgba(255, 255, 255, 0.1) 20px);
-  animation: shine 3s linear infinite;
 }
 
 .welding-spark {
@@ -493,37 +474,6 @@ body {
   gap: 20px;
 }
 
-.process-image {
-  background: linear-gradient(135deg, #ff6b35 0%, #f77737 100%);
-  border-radius: 20px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.process-image:nth-child(2) {
-  transform: translateX(30px);
-}
-
-.process-image::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: repeating-linear-gradient(45deg,
-      transparent,
-      transparent 10px,
-      rgba(255, 255, 255, 0.1) 10px,
-      rgba(255, 255, 255, 0.1) 20px);
-  animation: shine 3s linear infinite;
-}
 
 /* Секция преимуществ */
 .advantages-section {
@@ -600,44 +550,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.advantage-photo {
-  background: linear-gradient(135deg, #ff6b35 0%, #f77737 100%);
-  border-radius: 20px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-  overflow: hidden;
-}
-
-.advantage-photo-2 {
-  transform: translateX(-30px);
-}
-
-.advantage-photo::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: repeating-linear-gradient(45deg,
-      transparent,
-      transparent 10px,
-      rgba(255, 255, 255, 0.1) 10px,
-      rgba(255, 255, 255, 0.1) 20px);
-  animation: shine 3s linear infinite;
-}
-
-.photo-content {
-  position: relative;
-  z-index: 1;
 }
 
 /* Секция контактов */
@@ -788,16 +700,6 @@ body {
   }
 }
 
-@keyframes shine {
-  0% {
-    transform: translateX(-100%) translateY(-100%) rotate(45deg);
-  }
-
-  100% {
-    transform: translateX(100%) translateY(100%) rotate(45deg);
-  }
-}
-
 @keyframes spark {
   0% {
     transform: translate(0, 0) scale(0);
@@ -828,13 +730,6 @@ body {
     opacity: 1;
   }
 }
-
-/* Создаем искры - не используется в новом дизайне */
-/* .welding-spark:nth-child(1) { --x: 50px; --y: -80px; animation-delay: 0s; }
-        .welding-spark:nth-child(2) { --x: -60px; --y: -70px; animation-delay: 0.3s; }
-        .welding-spark:nth-child(3) { --x: 70px; --y: -60px; animation-delay: 0.6s; }
-        .welding-spark:nth-child(4) { --x: -40px; --y: -90px; animation-delay: 0.9s; }
-        .welding-spark:nth-child(5) { --x: 80px; --y: -50px; animation-delay: 1.2s; } */
 
 /* Дополнительные эффекты */
 .glow {
@@ -946,14 +841,6 @@ body {
     gap: 40px;
   }
 
-  .process-images {
-    grid-template-columns: 1fr;
-  }
-
-  .process-image:nth-child(2) {
-    transform: translateX(0);
-  }
-
   .process-header {
     flex-direction: column;
     align-items: flex-start;
@@ -971,10 +858,6 @@ body {
 
   .advantages-title {
     font-size: 48px;
-  }
-
-  .advantage-photo-2 {
-    transform: translateX(0);
   }
 
   .contact-content {
