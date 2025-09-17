@@ -437,7 +437,7 @@ img {
 
 .process-step {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 25px;
   position: relative;
   padding-left: 20px;
@@ -453,13 +453,11 @@ img {
 
 .step-content {
   flex-grow: 1;
-  padding-top: 10px;
 }
 
 .step-content h4 {
   font-size: 20px;
   color: #333;
-  margin-bottom: 10px;
   font-weight: 600;
 }
 
