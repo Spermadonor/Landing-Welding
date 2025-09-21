@@ -63,14 +63,18 @@ img {
 .hero-subtitle {
   font-size: 16px;
   color: #ccc;
-  margin-bottom: 20px;
   animation: fadeInUp 0.8s ease;
 }
 
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .hero-motto {
-  position: absolute;
-  top: 50px;
-  right: 40px;
   font-size: 24px;
   color: white;
   text-align: right;
@@ -190,10 +194,12 @@ h1 {
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-left: auto;
   border: 1px solid rgba(255, 255, 255, 0.2);
   max-width: 400px;
   animation: fadeInUp 1.4s ease;
+  box-shadow: inset 0 0 15px rgba(255, 107, 53, 0.5);
 }
 
 .form-title {
@@ -845,8 +851,6 @@ h1 {
 
 @media (max-width: 768px) {
   .hero-motto {
-    position: static;
-    margin-top: 20px;
     text-align: left;
     font-size: 18px;
   }
@@ -885,6 +889,7 @@ h1 {
   .contact-form {
     padding: 15px;
     max-width: 320px;
+    margin-right: auto;
   }
 
   .form-title {
