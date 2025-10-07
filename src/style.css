@@ -194,7 +194,7 @@ h1 {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 60px;
   background: linear-gradient(to bottom, transparent, #f0f0f0);
   z-index: 2;
 }
