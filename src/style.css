@@ -194,17 +194,17 @@ h1 {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 40px;
   background: linear-gradient(to bottom, transparent, #f0f0f0);
   z-index: 2;
 }
 
-  .hero-main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+.hero-main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
 /* Стили формы обратной связи */
 .contact-form {
@@ -272,6 +272,23 @@ h1 {
 .form-textarea {
   resize: vertical;
   min-height: 60px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f6181f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.policy-description {
+  font-size: 12px;
+  color: #ddd;
+  line-height: 1.4;
 }
 
 .form-button {
@@ -689,15 +706,6 @@ h1 {
 
 .gallery-item:hover .gallery-image img {
   transform: scale(1.1);
-}
-
-/* Адаптивность для галереи */
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 480px) {
-
 }
 
 /* Секция контактов */
