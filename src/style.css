@@ -274,10 +274,44 @@ h1 {
   min-height: 60px;
 }
 
-.checkbox {
+.checbox-wraper {
   display: flex;
-  align-items: center;
   gap: 8px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background: transparent;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: -4px;
+  width: 6px;
+  height: 12px;
+  border: solid #ff1a1a;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.label {
+  margin-left: 8px;
   font-size: 14px;
   font-weight: bold;
   color: #f6181f;
@@ -286,9 +320,16 @@ h1 {
 }
 
 .policy-description {
+  max-height: 0;
   font-size: 12px;
   color: #ddd;
   line-height: 1.4;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.policy-description.active {
+  max-height: 200px; /* Достаточно для отображения текста */
 }
 
 .form-button {

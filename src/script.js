@@ -11,3 +11,10 @@ overlay.addEventListener('click', (event) => {
     imageElement.querySelector('img').click();
   }
 });
+
+const label = document.querySelector('.contact-form-checkbox .label');
+const policyDescription = document.querySelector('.policy-description');
+
+label.addEventListener('click', () => {
+  policyDescription.classList.toggle('active');
+});
