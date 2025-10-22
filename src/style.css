@@ -872,6 +872,19 @@ input[type="checkbox"]:checked::after {
   animation-delay: 2.5s;
 }
 
+.baguetteBox-button#next-button, .baguetteBox-button#previous-button {
+  display: flex;
+  width: 70px;
+  height: 100px;
+  top: calc(50% - 50px);
+  align-items: center;
+  justify-content: center;
+}
+
+.baguetteBox-button svg {
+  position: static;
+}
+
 /* Анимации */
 
 @keyframes fadeInRight {
