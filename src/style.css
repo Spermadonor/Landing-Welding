@@ -1402,7 +1402,7 @@ input[type="checkbox"]:checked::after {
     font-size: 16px;
   }
 
-    .modal-content {
+  .modal-content {
     padding: 40px 30px;
   }
 
@@ -1538,23 +1538,8 @@ input[type="checkbox"]:checked::after {
     font-size: 14px;
   }
 
-    .modal-content {
+  .modal-content {
     padding: 30px 20px;
-  }
-
-  .success-checkmark {
-    width: 60px;
-    height: 60px;
-  }
-
-  .check-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .icon-success-circle {
-    width: 60px;
-    height: 60px;
   }
 
   .modal-title {
