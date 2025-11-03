@@ -18,3 +18,25 @@ const policyDescription = document.querySelector('.policy-description');
 label.addEventListener('click', () => {
   policyDescription.classList.toggle('active');
 });
+
+const form = document.querySelector('.feedback-form');
+form.addEventListener('submit', handleSubmit);
+function handleSubmit(event) {
+  console.log('Form submitted');
+  event.preventDefault();
+  document.getElementById('successModal').style.display = 'flex';
+  event.target.reset();
+}
+const modalButton = document.querySelector('.modal-button');
+modalButton.addEventListener('click', closeModal);
+function closeModal() {
+  document.getElementById('successModal').style.display = 'none';
+}
+
+// Закрытие по клику вне модального окна
+window.onclick = function(event) {
+  const modal = document.getElementById('successModal');
+  if (event.target === modal) {
+    closeModal();
+  }
+}
