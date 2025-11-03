@@ -1250,56 +1250,6 @@ input[type="checkbox"]:checked::after {
   }
 }
 
-/* Адаптивность модального окна */
-@media (max-width: 768px) {
-  .modal-content {
-    padding: 40px 30px;
-  }
-
-  .modal-title {
-    font-size: 26px;
-  }
-
-  .modal-text {
-    font-size: 14px;
-  }
-
-  .modal-button {
-    padding: 12px 30px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .modal-content {
-    padding: 30px 20px;
-  }
-
-  .success-checkmark {
-    width: 60px;
-    height: 60px;
-  }
-
-  .check-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .icon-success-circle {
-    width: 60px;
-    height: 60px;
-  }
-
-  .modal-title {
-    font-size: 22px;
-  }
-
-  .modal-button {
-    padding: 10px 25px;
-    font-size: 15px;
-  }
-}
-
 /* Адаптивность */
 @media (max-width: 1024px) {
   .main-title {
@@ -1451,6 +1401,23 @@ input[type="checkbox"]:checked::after {
   .contact-message p {
     font-size: 16px;
   }
+
+    .modal-content {
+    padding: 40px 30px;
+  }
+
+  .modal-title {
+    font-size: 26px;
+  }
+
+  .modal-text {
+    font-size: 14px;
+  }
+
+  .modal-button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1569,5 +1536,33 @@ input[type="checkbox"]:checked::after {
 
   .contact-item {
     font-size: 14px;
+  }
+
+    .modal-content {
+    padding: 30px 20px;
+  }
+
+  .success-checkmark {
+    width: 60px;
+    height: 60px;
+  }
+
+  .check-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-success-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+
+  .modal-button {
+    padding: 10px 25px;
+    font-size: 15px;
   }
 }
