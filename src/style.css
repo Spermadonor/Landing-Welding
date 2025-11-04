@@ -1238,6 +1238,75 @@ input[type="checkbox"]:checked::after {
   }
 }
 
+/* Спиннер на кнопке */
+.button-spinner {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  animation: buttonSpinnerRotate 1s linear infinite;
+}
+
+.spinner-spark {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.spinner-spark:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: sparkPulse 1s ease-in-out infinite;
+}
+
+.spinner-spark:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  animation: sparkPulse 1s ease-in-out 0.33s infinite;
+}
+
+.spinner-spark:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: sparkPulse 1s ease-in-out 0.66s infinite;
+}
+
+.form-button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.form-button:disabled:hover {
+  transform: none;
+  box-shadow: 0 5px 20px rgba(255, 107, 53, 0.3);
+}
+
+@keyframes buttonSpinnerRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sparkPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
 /* Адаптивность */
 @media (max-width: 1024px) {
   .main-title {
